@@ -1,0 +1,31 @@
+# =======[Variables]=======
+padding_outer="40"
+padding_inner="10"
+border_color="0xFF65b6cf"
+
+# =======[Tiling]=======
+yabai -m config layout                      bsp
+yabai -m config top_padding                 "${padding_outer}"
+yabai -m config bottom_padding              "${padding_outer}"
+yabai -m config left_padding                "${padding_outer}"
+yabai -m config right_padding               "${padding_outer}"
+yabai -m config window_gap                  "${padding_inner}"
+yabai -m config window_shadow               float 
+yabai -m config focus_follows_mouse         off
+yabai -m space 1 --padding                  abs:100:100:100:100
+
+# =======[Window Focus]=======
+yabai -m config window_topmost              on
+yabai -m config mouse_follows_focus         off
+yabai -m config focus_follows_mouse         autofocus
+
+# =======[Borders]=======
+yabai -m config window_border               off
+
+# =======[Rules]=======
+yabai -m rule --add label="Finder" app="^Finder$" manage=off
+yabai -m rule --add label="System Preferences" app="^System Perferences$" manage=off
+yabai -m rule --add label="Preview" app="^Preview$" manage=off
+yabai -m rule --add label="Disk Utility" app="^Disk Utility$" manage=off
+yabai -m rule --add label="Simulator" app="^Simulator$" manage=off
+
