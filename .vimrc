@@ -28,7 +28,7 @@ set incsearch
 
 " Set default colorscheme
 set background=dark
-colorscheme monokai 
+colorscheme gruvbox 
 
 " ================[PLUGINS]================
 
